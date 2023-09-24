@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letian's home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image:url(./小埋大图背景.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* display: flex; */
+            /* height: 100%; */
+            position: relative;
+        }
+        .loginbox {
+            width: 800px;
+            height: 450px;
+            background-color: rgb(255, 255, 255,0.9);
+            /* margin: auto; */
+            border-radius: 15px;
+            /* border: 2px solid rgba(red, green, blue, alpha); */
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            position: absolute;
+            /* top: 50%; */
+            /* left: 30%; */
+            transform: translate(70%,60%);
+
+        }
+        #loginpicture {
+            width: 300px;
+            border-radius: 15px 0px 0px 15px;
+        }
+        .boxtitle {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0px;
+        }
+        .loginform,.inputform {
+            width: 300px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+        a:visited {
+            color: black;
+        }
+    </style>
+</head>
+<body >
+    <div class="loginbox">
+        
+        <div class="loginform">
+            <img src="./小埋login.jpg" id="loginpicture">
+        </div>
+        <div class="inputform">
+            <div class="box-input">
+                <p class="boxtitle">账号</p>
+                <input type="text"  value="用户名">
+                <p class="boxtitle">密码</p>
+                <input type="password" >
+                <br>
+                <button><a href="./resume.html">登录</a></button>
+                <p>没有账号？点击<a href="javascript:alert('敬请期待');">注册</a></p>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+</body>
+</html>
