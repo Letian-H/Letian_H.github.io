@@ -8,33 +8,27 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            text-decoration: none;
         }
         body {
             background-image:url(./小埋大图背景.png);
             background-size: cover;
             background-repeat: no-repeat;
-            /* display: flex; */
-            /* height: 100%; */
-            position: relative;
+            justify-content: center;
+            align-items: center;
         }
         .loginbox {
-            width: 800px;
-            height: 450px;
-            background-color: rgb(255, 255, 255,0.9);
-            /* margin: auto; */
+            width: 30%;
+            height: 35%;
+            background-color: rgb(255, 255, 255,0.7);
             border-radius: 15px;
-            /* border: 2px solid rgba(red, green, blue, alpha); */
-            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgb(228, 125, 40);
             display: flex;
-            position: absolute;
-            /* top: 50%; */
-            /* left: 30%; */
-            transform: translate(70%,60%);
-
+            transform: translate(110%,90%);
+            backdrop-filter: blur(5px);
         }
         #loginpicture {
-            width: 300px;
+            width: 40%;
             border-radius: 15px 0px 0px 15px;
         }
         .boxtitle {
@@ -42,38 +36,75 @@
             font-weight: 500;
             margin: 0px;
         }
-        .loginform,.inputform {
-            width: 300px;
+        .formbox {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+        /* .inputbox {
+            outline: none;
+            border: 0;
+        } */
+        h2 {
+            letter-spacing: 2px;
         }
         a {
             text-decoration: none;
             color: black;
 
         }
-        a:visited {
-            color: black;
+        /* .boxtitle {
+            line-height: 2em;
+            font-weight: 700;
+            font-size: 2rem;
+        } */
+
+        .inputtitle {
+            font-size: larger;
+            width: 80%;
+            height: 2em;
+            /* border: black 1px solid; */
+            border: 0;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 2px solid #F07243;
+        }
+        button {
+            background-color: #1A73E8;
+            border: none;
+            border-radius: 5px;
+            width: 39%;
+            height: 2em;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        #zhuce {
+            background-image: linear-gradient(to left,#EF7142,#D74268);
+           
         }
     </style>
 </head>
 <body >
     <div class="loginbox">
-        
-        <div class="loginform">
+        <!-- <div class="picbox"> -->
             <img src="./小埋login.jpg" id="loginpicture">
-        </div>
-        <div class="inputform">
-            <div class="box-input">
-                <p class="boxtitle">账号</p>
-                <input type="text"  value="用户名">
-                <p class="boxtitle">密码</p>
-                <input type="password" >
+        <!-- </div> -->
+        <form class="formbox">
+            <div class="inputbox">
+                <h2>登录</h2>
                 <br>
-                <button><a href="./resume.html">登录</a></button>
-                <p>没有账号？点击<a href="javascript:alert('敬请期待');">注册</a></p>
+                <input class="inputtitle" type="text" placeholder="账号">
+                <br>
+                <br>
+                <input class="inputtitle" type="password" placeholder="密码">
+                <br>
+                <br>
+                <a href="./resume.html"><button type="button">登录</button></a>
+                <a href="javascript:alert('敬请期待');"><button type="button" id="zhuce">注册</button></a>
             </div>
-        </div>
+        </form>
         <br>
-        
     </div>
 </body>
 </html>
